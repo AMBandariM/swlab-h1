@@ -1,0 +1,15 @@
+# User
+TODO.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Temp files
+temp.txt
+logs/
