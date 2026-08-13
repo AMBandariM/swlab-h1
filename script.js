@@ -32,8 +32,10 @@ function displayResult(player, computer, result) {
     resultDiv.textContent = message;
 }
 
-function playRound(choice) {
-    console.log('player picked', choice)
+function playRound(playerChoice) {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(playerChoice, computerChoice);
+    displayResult(playerChoice, computerChoice, result);
 }
 
 document.getElementById('rock').addEventListener('click', () => playRound('rock'));
