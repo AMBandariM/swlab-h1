@@ -22,6 +22,16 @@ function determineWinner(player, computer) {
     return 'lose';
 }
 
+function displayResult(player, computer, result) {
+    const resultDiv = document.getElementById('result');
+    const emojis = { rock: '🪨', paper: '📄', scissors: '✂️' };
+    let message = `شما: ${emojis[player]} | کامپیوتر: ${emojis[computer]} | `;
+    if (result === 'win') message += '🏆 شما بردید!';
+    else if (result === 'lose') message += '💻 کامپیوتر برد!';
+    else message += '🤝 مساوی!';
+    resultDiv.textContent = message;
+}
+
 function playRound(choice) {
     console.log('player picked', choice)
 }
