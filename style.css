@@ -30,3 +30,12 @@ button {
     border-radius: 8px;
     min-height: 60px;
 }
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 20px;
+    background: #cbd5e1;
+    padding: 10px;
+    border-radius: 8px;
+}
