@@ -10,6 +10,18 @@ console.log(getComputerChoice());
 console.log(getComputerChoice());
 console.log(getComputerChoice());
 
+function determineWinner(player, computer) {
+    if (player === computer) return 'draw';
+    if (
+        (player === 'rock' && computer === 'scissors') ||
+        (player === 'paper' && computer === 'rock') ||
+        (player === 'scissors' && computer === 'paper')
+    ) {
+        return 'win';
+    }
+    return 'lose';
+}
+
 function playRound(choice) {
     console.log('player picked', choice)
 }
