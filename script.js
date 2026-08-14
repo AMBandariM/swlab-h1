@@ -48,6 +48,7 @@ function playRound(playerChoice) {
         computerScore += 1;
         document.getElementById('computer-score').innerText = computerScore;
     }
+    timer += 1;
 }
 
 document.getElementById('rock').addEventListener('click', () => playRound('rock'));
