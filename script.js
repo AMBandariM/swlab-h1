@@ -40,6 +40,7 @@ function playRound(playerChoice) {
     const computerChoice = getComputerChoice();
     const result = determineWinner(playerChoice, computerChoice);
     displayResult(playerChoice, computerChoice, result);
+    timer += 1;
 }
 
 document.getElementById('rock').addEventListener('click', () => playRound('rock'));
