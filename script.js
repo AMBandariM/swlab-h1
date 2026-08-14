@@ -40,6 +40,14 @@ function playRound(playerChoice) {
     const computerChoice = getComputerChoice();
     const result = determineWinner(playerChoice, computerChoice);
     displayResult(playerChoice, computerChoice, result);
+    if (result === 'win') {
+        playerScore += 1;
+        document.getElementById('player-score').innerText = playerScore;
+    }
+    if (result === 'lose') {
+        computerScore += 1;
+        document.getElementById('computer-score').innerText = computerScore;
+    }
     timer += 1;
 }
 
